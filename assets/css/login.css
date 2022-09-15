@@ -1,133 +1,54 @@
-html,
-body {
-    position: relative;
+body,
+html {
     margin: 0;
-    overflow: hidden;
-    width: 100%;
+    padding: 0;
     height: 100%;
-    /* cursor: none; */
-    background: black;
-    background: linear-gradient(to bottom, #000000 0%, #5788fe 100%);
-}
-
-.filter {
     width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #fe5757;
-    animation: colorChange 30s ease-in-out infinite;
-    animation-fill-mode: both;
-    mix-blend-mode: overlay;
+    background: url('../images/login_bg.jpg') no-repeat center;
+    background-size: cover;
 }
 
-@keyframes colorChange {
-
-    0%,
-    100% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: .9;
-    }
+.w {
+    width: 1140px;
+    margin: 0 auto;
+    /* background-color: #fff; */
 }
-
-.landscape {
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /*background-image:url(../images/trees-landscape-silhouette.png);
-				*/
-    background-image: url('../images/xkbg.png');
-    background-size: 1000px 250px;
-    background-repeat: repeat-x;
-    background-position: center bottom;
-}
-
-/* 以上均为背景动画的样式 */
-
-/* 登录模块 */
-.loginAndRegBox {
+.loginbox{
     width: 400px;
-    /* height: 310px; */
+    height: 310px;
+    background-color: #fff;
     position: absolute;
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, .8);
-    z-index: 999;
+    top: 25%;
+    transform: translate(-50%);
+    
 }
-
-@media screen and (max-width: 768px) {
-    .loginAndRegBox {
-        width: 300px;
-    }
+.title-box{
+    /* width: 100%; */
+    height: 60px;
+    background:url('../images/login_title.png') no-repeat center;
 }
-
-.title-box h1 {
-    font-family: "SimSun", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei";
-    text-align: center;
-    padding: 10px 0;
-    font-weight: bold;
-    color: rgb(36, 53, 70);
-}
-
-.reg-box {
+.reg-box{
     display: none;
 }
-
-.layui-form {
+.layui-form{
     padding: 0 30px;
 }
-
-.links {
+.layui-form-item{
     display: flex;
     justify-content: flex-end;
 }
-
-.links a {
+.layui-form-item a{
     font-size: 12px;
 }
-
-.layui-form-item {
+.layui-form-item{
     position: relative;
 }
-
-.layui-icon {
+.layui-icon{
     position: absolute;
     left: 10px;
-    top: 10px;
+    top: 9px;
 }
-
-.layui-input {
+.layui-input{
     padding-left: 30px;
-}
-
-/* 密码框睁眼/闭眼icon */
-.icon-biyanjing {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-}
-
-.icon-icon-eye-open {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-}
-
-.pwdStatus {
-    display: none;
-}
-
-.pwdStatus1 {
-    display: none;
-}
-
-.pwdStatus2 {
-    display: none;
 }
