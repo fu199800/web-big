@@ -14,7 +14,7 @@ $.ajaxPrefilter(function (options) {
     options.complete=function (res) {
         // res.responseJSON 保存着服务器返回的数据
         // console.log(1);
-        console.log(res)
+        // console.log(res)
         if (res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败！') {
             // 1、清除本地存储的 token
             localStorage.removeItem("token")
